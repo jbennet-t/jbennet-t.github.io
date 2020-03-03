@@ -34,9 +34,30 @@
       position: relative;
     }
 
-    .shadowtext
-    {
-      text-shadow: 1px 1px #000000;
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-shadow: 1px 1px #000000
+    }
+
+    .hero-text button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 10px 25px;
+      color: black;
+      background-color: #ddd;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .hero-text button:hover {
+      background-color: #555;
+      color: white;
     }
 
     /* Add a gray background color and some padding to the footer */
@@ -73,9 +94,10 @@
 <!-- 2nd Container - Image Banner-->
 
 <div class="hero-image">
-    <h2 class = "shadowtext">Jordan Sinoway</h1>
-    <h3 class = "shadowtext">Computer and Robotics Engineer</h2>
-  <br>
+  <div class="hero-text">
+    <h2>Jordan Sinoway</h1>
+    <h3>Computer and Robotics Engineer</h2>
+  </div>
 </div>
 
 
@@ -84,6 +106,7 @@
 <div class="container-fluid bg-2 text-center">
 <br>
   <h2 class="margin">About</h2>
+  <br>
   <p class = "about text-center">Hello! I am a junior computer engineering student who is passionate and excited about software engineering, web developmenet, and neural networks/machine learning.</p>
 
   <br>
